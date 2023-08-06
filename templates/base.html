@@ -1,0 +1,39 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<header>
+   <a href="{% url 'home' %}">
+    Home 
+   </a>
+
+   <a href="{% url 'about' %}">
+    About
+   </a>
+
+
+   <a href="{% url 'post_new' %}">
+    Create New Post
+   </a>
+</header>
+
+{% block content %}
+
+
+
+{% endblock content %}
+
+
+
+<footer>
+
+    @All rights reserved !!
+</footer>
